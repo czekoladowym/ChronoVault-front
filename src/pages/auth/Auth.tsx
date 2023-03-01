@@ -1,16 +1,36 @@
-import { AuthBackground, AuthBlock, AuthWindow } from "./authStyles";
-
+import {
+  AuthWindow,
+  AuthCard,
+  CardTitle,
+  CardDesc,
+  GoogleLogBtn,
+  CardHr,
+  SignInInput,
+  SignInField,
+  ForgotPassword,
+  SignInBtn,
+  AccountOffer,
+} from "./authStyles";
 const Auth = () => {
   return (
     <AuthWindow>
-      <AuthBlock></AuthBlock>
-      <AuthBackground>
-        <img
-          src="/img/auth/bg/background-01.svg"
-          alt="Auth Background"
-          className="auth-bg"
-        />
-      </AuthBackground>
+      <AuthCard>
+        <CardTitle>Welcome back!</CardTitle>
+        <CardDesc>Continue with Google or enter your details.</CardDesc>
+        <GoogleLogBtn>
+          <img src="/img/auth/logos/Google_Logo.svg" />
+          Log in with Google
+        </GoogleLogBtn>
+        <CardDesc>or</CardDesc>
+        <CardHr />
+        <SignInField>
+          <SignInInput placeholder="Email" />
+          <SignInInput placeholder="Password" />
+        </SignInField>
+        <ForgotPassword>Forgot password?</ForgotPassword>
+        <SignInBtn>Log in</SignInBtn>
+        <AccountOffer>Don't have account? </AccountOffer>
+      </AuthCard>
     </AuthWindow>
   );
 };
