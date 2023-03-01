@@ -24,8 +24,8 @@ const Auth = () => {
         <CardDesc>or</CardDesc>
         <CardHr />
         <SignInField>
-          <SignInInput placeholder="Email" />
-          <SignInInput placeholder="Password" />
+          <SignInInput placeholder="Email" type={"email"} />
+          <SignInInput placeholder="Password" type={"password"} />
         </SignInField>
         <ForgotPassword>Forgot password?</ForgotPassword>
         <SignInBtn>Log in</SignInBtn>
